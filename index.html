@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Bonus | 1xBet Exclusive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero-section" id="hero">
+        <div class="coin-container" id="coinContainer"></div>
+
+        <div class="content-card" id="card">
+            <i class="fas fa-gift" style="font-size: 3rem; color: #ffcc00; margin-bottom: 10px; filter: drop-shadow(0 0 15px rgba(255,215,0,0.5));"></i>
+            
+            <h1>Get Your Bonus</h1>
+            
+            <p style="color:#fff; margin: 10px 0 15px 0; font-size: 1.1rem; font-weight: 500;">
+                Your personal bonus of <span style="color: var(--primary-gold); font-weight: 800; font-size: 1.3rem;">₹50,000</span>
+            </p>
+
+            <p style="color:#aaa; margin-bottom: 10px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">
+                <i class="fas fa-hand-pointer"></i> Scratch to reveal code
+            </p>
+            
+            <div class="scratch-wrapper">
+                <div id="promoContainer" class="scratch-container">
+                    <div class="secret-code">BIJOYLUCK</div>
+                    <canvas id="scratchCanvas"></canvas>
+                </div>
+                <div class="fireworks-anchor" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;"></div>
+            </div>
+
+            <a href="#" class="cta-button">Claim Now <i class="fas fa-arrow-right"></i></a>
+
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-telegram-plane"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottomToast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i class="fas fa-fire-alt"></i>
+            </div>
+            <div class="text-group">
+                <div class="toast-msg">Congratulations! <br>Bonus code revealed!</div>
+                <div id="countdown" class="timer-display">60:00</div>
+            </div>
+        </div>
+    </div>
+
+   <script src="server.js"></script>
+</body>
+</html>
